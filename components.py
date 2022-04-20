@@ -74,7 +74,8 @@ class Score(Turtle):
         
         self.update_score()
 
-    def update_score(self):            
+    def update_score(self):
+        self.clear()      
         self.goto(100, 200)
         self.write(self.bar2_score, align='center', font=self.font)
         self.goto(-100, 200)
